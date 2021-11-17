@@ -391,5 +391,4 @@ elements.forEach((element) => {
   appContainer.appendChild(newElement);
 });
 
-//  1,38,00,00,000
-//  1,38,00,00,000
+//  PS: This JS Code is by Nico. I'm dumb at JS.
