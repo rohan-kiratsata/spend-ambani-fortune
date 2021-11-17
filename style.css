@@ -1,0 +1,266 @@
+/* Global font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,500&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* html {
+  font-size: 62.5%;
+} */
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 40vh;
+  color: #33373a;
+  /* margin-top: 30px; */
+  padding: 20px;
+}
+#header-img{
+  width: 200px;
+  border-radius: 50%;
+}
+.title-container {
+  text-align: center;
+
+  padding: 2rem;
+  width: 100%;
+}
+
+.title-container h1 {
+  font-size: 3rem;
+  font-weight: 500;
+}
+.title-container p {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+
+.total {
+  background-color: #0858b4;
+  color: white;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  margin-bottom: 4rem;
+}
+
+.totalMoney {
+  font-size: 2rem;
+  margin: 0 2rem;
+}
+.percentageLeft {
+  font-size: 2rem;
+  margin: 0 2rem;
+}
+
+.app-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  /* margin: px; */
+}
+
+.element {
+  max-width: 400px;
+  margin: 10px 10px;
+  object-fit: cover;
+  text-align: center;
+  background-color: #175086;
+  color: white;
+  border-radius: 10px;
+
+}
+
+.element img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background-color: #d0f7d7;
+}
+
+.element p {
+  font-size: 1.3rem;
+  padding: 10px;
+}
+
+.element span {
+  font-size: 1.4rem;
+}
+
+.buyAndSellContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button {
+  cursor: pointer;
+  padding: 10px;
+  font-family: 'Poppins', sans-serif;
+  border: none;
+  border-radius: 20%;
+  margin: 1rem;
+  /* padding: 30px; */
+  /* font-weight: 600;
+  font-size: 1.4rem; */
+  font-weight: 400;
+  /* background-color: white; */
+}
+
+.btn-buy {
+  background-color: rgb(23, 180, 75);
+  color: #000;
+}
+.btn-buy:hover {
+  background-color: rgb(87, 241, 138);
+}
+
+.btn-sell {
+  background-color: rgb(247, 137, 137);
+  color: #000;
+}
+
+.btn-sell:hover {
+  background-color: rgb(253, 201, 192);
+}
+
+
+
+.receipt {
+  display: flex;
+  flex-direction: column;
+  min-height: 20vh;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.receipt h1 {
+  padding: 1rem;
+  font-size: 2rem;
+}
+
+.receipt p {
+  font-size: 1.3rem;
+  padding: 0.5rem;
+}
+
+.totalRecipt {
+  font-size: 2.5rem;
+  text-decoration: underline;
+  padding: 1rem;
+}
+
+.btn-print {
+  display: block;
+  text-align: center;
+}
+
+.btn-print button {
+  background-color: #175086;
+  color: white;
+  border-radius: 0%;
+
+}
+
+.btn-print button:hover {
+  background-color: #3179bd;
+  color: white;
+}
+
+.coffe-link {
+  text-align: center;
+  display: block;
+  font-size: 1.7rem;
+  margin: 3rem;
+}
+
+.coffe-link a {
+  text-decoration: none;
+  color: rgb(16, 209, 145);
+  text-decoration: underline;
+}
+#header-bg{
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  background-image: url(IMAGES/dollar-emoji.png);
+  background-color: #59a5fd;
+  background-repeat: repeat;
+  animation: marquee 40s infinite linear;
+}
+
+@keyframes marquee {
+  0%{
+    background-position: 0;
+  }
+  100%{
+    background-position: -1190px;
+  }
+}
+
+/* Media query */
+
+@media screen and (max-width: 560px) {
+  .total {
+    display: flex;
+    flex-direction: column;
+    padding: 4px;
+    padding-top: 3rem;
+  }
+
+  .percentageLeft {
+    margin-top: 1rem;
+  }
+
+  .percentageLeft,
+  .totalMoney {
+    font-size: 1.1rem;
+    margin: 0;
+  }
+
+  .receipt {
+    padding: 5px;
+  }
+  .receipt p {
+    font-size: 15px;
+    padding: 10px;
+  }
+  .receipt h1{
+    font-size: 25px;
+  }
+
+  .element{
+    max-width: 300px;
+
+  }
+  .element img {
+    width: 300px;
+    height: 300px;
+  }
+  .title-container h1{
+    /* font-size: 0rem; */
+    font-size: 30px;
+  }
+  .title-container p{
+    font-size: 20px;
+  }
+}
