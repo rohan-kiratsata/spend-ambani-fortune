@@ -372,6 +372,16 @@ function preLoad() {
     38000000,
     'IMAGES/squid-game.jpg'
   );
+  createAndSaveElement(
+    'VirginGalactic Space Ride',
+    250000,
+    'IMAGES/spaceride.jpg'
+  );
+  createAndSaveElement(
+    'VirginGalactic Space Ride',
+    250000,
+    'IMAGES/spaceride.jpg'
+  );
 }
 
 elements.forEach((element) => {
