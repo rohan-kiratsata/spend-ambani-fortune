@@ -378,9 +378,9 @@ function preLoad() {
     'IMAGES/spaceride.jpg'
   );
   createAndSaveElement(
-    'VirginGalactic Space Ride',
-    250000,
-    'IMAGES/spaceride.jpg'
+    'Stay in Burj Al Arab for 30 Days',
+    51000,
+    'IMAGES/burjhotel.jpg'
   );
 }
 
