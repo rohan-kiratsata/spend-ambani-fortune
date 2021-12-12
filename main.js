@@ -342,7 +342,11 @@ function preLoad() {
     750000000,
     'IMAGES/villa.jpg'
   );
-
+  createAndSaveElement(
+    'IPL Team (Approx)',
+    840000000,
+    'IMAGES/IPL-Logo.webp'
+  );
   createAndSaveElement(
     'F1 Team (Approx)',
     700000000,
@@ -382,6 +386,7 @@ function preLoad() {
     51000,
     'IMAGES/burjhotel.jpg'
   );
+  
 }
 
 elements.forEach((element) => {
